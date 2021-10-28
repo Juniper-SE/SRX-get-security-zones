@@ -1,14 +1,17 @@
 [tool.poetry]
 name = "srx-get-security-zones"
 version = "0.1.0"
-description = "Use scrapli to retrieve security zone information from a Juniper SRX firewall"
+description = "Uses Scrapli to retrieve security zones"
 authors = ["Calvin Remsburg <cremsburg@protonmail.com>"]
+license = "Apache 2.0"
 
 [tool.poetry.dependencies]
 python = "^3.8"
 scrapli-netconf = "^2021.7.30"
-xmltodict = "^0.12.0"
+invoke = "^1.6.0"
+asyncio = "^3.4.3"
 asyncssh = "^2.7.2"
+xmltodict = "^0.12.0"
 Jinja2 = "^3.0.2"
 
 [tool.poetry.dev-dependencies]
